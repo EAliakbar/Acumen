@@ -1,0 +1,24 @@
+{
+  "name": "mikrotik-internet-usage",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EAliakbar/Mikrotik-Internet-Usage.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EAliakbar/Mikrotik-Internet-Usage/issues"
+  },
+  "homepage": "https://github.com/EAliakbar/Mikrotik-Internet-Usage#readme",
+  "dependencies": {
+    "ip-range-check": "^0.0.2",
+    "split-lines": "^2.0.0"
+  }
+}
