@@ -39,6 +39,7 @@ function aggregator(data) {
   });
 
   console.log(this.table)
+  return this.table
 }
 
 function aggregate(data) {

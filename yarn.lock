@@ -2,6 +2,13 @@
 # yarn lockfile v1
 
 
+graphite@^0.1.4:
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/graphite/-/graphite-0.1.4.tgz#cebba3c06d55239016fb3ec78d57226ff83178d5"
+  integrity sha512-26bBoyKkuv5g2YpPbWKeSvTlKvGvKlkRdDl05rOiJUx/Jw2IfERkHprrJoHNcSZJ7RG2XvfQF1oHXhq6K9elVQ==
+  dependencies:
+    lazy-socket "0.0.3"
+
 ip-range-check@^0.0.2:
   version "0.0.2"
   resolved "https://registry.yarnpkg.com/ip-range-check/-/ip-range-check-0.0.2.tgz#605c859687aa4f18463918d46190d8b3699a293c"
@@ -13,6 +20,11 @@ ipaddr.js@^1.0.1:
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/ipaddr.js/-/ipaddr.js-1.9.0.tgz#37df74e430a0e47550fe54a2defe30d8acd95f65"
   integrity sha512-M4Sjn6N/+O6/IXSJseKqHoFc+5FdGJ22sXqnjTpdZweHK64MzEPAyQZyEU3R/KRv2GLoa7nNtg/C2Ev6m7z+eA==
+
+lazy-socket@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/lazy-socket/-/lazy-socket-0.0.3.tgz#218df9a580f1544d8bb84c3149df047ac0cffd3a"
+  integrity sha1-IY35pYDxVE2LuEwxSd8EesDP/To=
 
 split-lines@^2.0.0:
   version "2.0.0"
