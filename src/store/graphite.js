@@ -1,5 +1,6 @@
+const config = require('../../config');
 const graphite = require('graphite');
-let client = graphite.createClient('plaintext://localhost:2003/');
+let client = graphite.createClient(config.GRAPHITE_CARBON_URL);
 
 //Replacing dot character in ip addresses with _
 //Because Graphite use dot as separator
