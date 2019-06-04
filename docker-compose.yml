@@ -11,8 +11,8 @@ services:
       - "8125:8125/udp"
       - "8126:8126"
     volumes:
-      - "configs/graphite/storage-schemas.conf:/opt/graphite/conf/storage-schemas.conf"
-      - "configs/graphite/storage-aggregation.conf:/opt/graphite/conf/storage-aggregation.conf"
+      - ./configs/graphite/storage-schemas.conf:/opt/graphite/conf/storage-schemas.conf
+      - ./configs/graphite/storage-aggregation.conf:/opt/graphite/conf/storage-aggregation.conf
     restart: always
   grafana:
     image: grafana/grafana
@@ -20,3 +20,6 @@ services:
       - "3000:3000"
     environment:
       GF_SECURITY_ADMIN_PASSWORD: secret
+#  collector:
+#    image: ealiakbar/
+#    build: .
