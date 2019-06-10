@@ -20,6 +20,8 @@ services:
       - "3000:3000"
     environment:
       GF_SECURITY_ADMIN_PASSWORD: secret
-#  collector:
-#    image: ealiakbar/
-#    build: .
+  collector:
+    image: ealiakbar/acumen-collector
+    build: .
+    volumes:
+      - ./config.js:/config.js
