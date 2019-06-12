@@ -4,12 +4,12 @@ version: '2'
 services:
   graphite:
     image: graphiteapp/graphite-statsd
-    ports:
-      - "80:80"
-      - "2003-2004:2003-2004"
-      - "2023-2024:2023-2024"
-      - "8125:8125/udp"
-      - "8126:8126"
+#    ports:
+#      - "80:80"
+#      - "2003-2004:2003-2004"
+#      - "2023-2024:2023-2024"
+#      - "8125:8125/udp"
+#      - "8126:8126"
     volumes:
       - ./configs/graphite/storage-schemas.conf:/opt/graphite/conf/storage-schemas.conf
       - ./configs/graphite/storage-aggregation.conf:/opt/graphite/conf/storage-aggregation.conf
@@ -25,3 +25,5 @@ services:
     build: .
     volumes:
       - ./config.js:/config.js
+    depends_on:
+      - graphite
