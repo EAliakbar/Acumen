@@ -1,6 +1,8 @@
 # Acumen
 
 this is a solution for store and monitoring Internet Usage of mikrotik router clients
+
+Acumen means **the ability to make good judgements and take quick decisions.**
 ![Dashboard](docs/dashboard.png)
 ## Getting Started
 Acumen consists of three components:
